@@ -4,13 +4,14 @@ Projeto desenvolvido para a FIAP
 
 ### Features
 
-- Buscar todas as atividades cadastradas
-- Buscar por atividade especifica
-- Cadastrar atividade
+- Login
+- Cadastro de usuario
+- Criação de evento
+- Listagem de todos os eventos
 
 ## Como usar
 
-- Baixe o projeto: `git clone https://github.com/rafaelaugustos/cyrela-webservice-fiap.git`
+- Baixe o projeto: `git clone https://github.com/rafaelaugustos/eden-api.git`
 - Instale as dependencias: `yarn install` ou `npm install`
 - Rode o projeto: `yarn start` ou `npm start`
 
