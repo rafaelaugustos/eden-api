@@ -25,13 +25,16 @@ export default async (req, res) => {
 				message: 'Usuario ou senha incorretos',
 			})
 
-		const token = await jwt.sign({ id: user.id }, 12345678, { expiresIn: '1h' })
+		const token = await jwt.sign({ id: user.id }, '12345678', {
+			expiresIn: '1h',
+		})
 
 		return res.send(200, {
 			auth: true,
 			token,
 		})
 	} catch (e) {
+		console.log(e)
 		return res.send(400, { message: 'Algo deu errado!' })
 	}
 }
